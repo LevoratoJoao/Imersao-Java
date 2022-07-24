@@ -1,4 +1,6 @@
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -32,9 +34,24 @@ public class App {
             switch (aux) {
                 case 1:
                     for (Map<String,String> filme : listaDeFilmes) {
+
+                    /* Input do usuario para o enereco da imagem na qual ele quer fazer a figurinha
+                        Scanner reader = new Scanner(System.in);
+                        System.out.println("Digite o endereco da imagem: ");
+                        reader.close();
+                    */
+                        String enderecoImagem = filme.get("image");
+                        String titulo = filme.get("title");
+
+                        String nomeArquivo = "images/" + titulo + ".png";
+                        InputStream inputStream = new URL(enderecoImagem).openStream(); // Classe InputStream ler uma fonte de bytes (file, url, byteArray...)
                         System.out.println("Titulo: \u001b[1m" + filme.get("title") + "\u001b[0m");
                         System.out.println("Poster: \u001b[4m"+ filme.get("image") + "\u001b[0m");
                         System.out.println("Nota: " + filme.get("imDbRating"));
+
+                        var geradora = new GeradorDeStickers();
+                        geradora.cria(inputStream, nomeArquivo);
+
                         System.out.println();
                     }
                     break;

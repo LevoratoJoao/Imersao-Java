@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.InputStream;
 import javax.imageio.ImageIO;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class GeradorDeStickers {
 
@@ -30,11 +30,13 @@ public class GeradorDeStickers {
         graphics.setColor(Color.ORANGE);
 
         // Escrever algo na nova imagem
-        Scanner reader = new Scanner(System.in);
-        System.out.println("Digite a mensagem da imagem: ");
-        String image = reader.nextLine();
-        graphics.drawString(image, 60, novaAltura - 100); // Criiar mensagem com input do usuario
-        reader.close();
+        /* Input do usuario para cada mensagem
+            Scanner reader = new Scanner(System.in);
+            System.out.println("Digite a mensagem da imagem: ");
+            String image = reader.nextLine();
+
+         */
+        graphics.drawString("IMERSAO JAVA", 60, novaAltura - 100); // Criiar mensagem com input do usuario
 
         // Escrever a imagem nova em um arquivo
         ImageIO.write(novaImagem, "png", new File(nomeArquivo));
