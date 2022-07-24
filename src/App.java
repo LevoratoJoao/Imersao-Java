@@ -2,7 +2,6 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandler;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
@@ -35,7 +34,7 @@ public class App {
                     for (Map<String,String> filme : listaDeFilmes) {
                         System.out.println("Titulo: \u001b[1m" + filme.get("title") + "\u001b[0m");
                         System.out.println("Poster: \u001b[4m"+ filme.get("image") + "\u001b[0m");
-                        System.out.println("Nota" + filme.get("imDbRating"));
+                        System.out.println("Nota: " + filme.get("imDbRating"));
                         System.out.println();
                     }
                     break;
