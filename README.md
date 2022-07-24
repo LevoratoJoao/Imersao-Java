@@ -18,7 +18,7 @@ Projeto desenvolvido durante a imersão Java - Alura.
 * (https://api.mocki.io/v2/549a5d8b/MostPopularMovies)
 * (https://api.mocki.io/v2/549a5d8b/MostPopularTVs)
 * (https://api.mocki.io/v2/549a5d8b/Top250TVs)
-<!-- # Aula 01
+# Aula 01
 Durante a aula 01 foi contruido uma aplicação para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
 ## Desafios
   1. [ ] 1. Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
@@ -33,7 +33,7 @@ Durante a aula 01 foi contruido uma aplicação para consumir a API do IMDb e ex
 * Artigo: [README](https://www.alura.com.br/artigos/escrever-bom-readme).
 * Artigo: [O que é json](https://www.alura.com.br/artigos/o-que-e-json).
 * Artigo: [Cores no terminal](https://www.alura.com.br/artigos/decorando-terminal-cores-emojis).
-* Artigo: [VS Code para Java](https://www.alura.com.br/artigos/desenvolvendo-aplicacoes-java-vs-code). -->
+* Artigo: [VS Code para Java](https://www.alura.com.br/artigos/desenvolvendo-aplicacoes-java-vs-code).
 
 # Aula 02
 Na segunda aula foi criado um gerador de figurinhas explorando outras bibliotecas nativas do Java
