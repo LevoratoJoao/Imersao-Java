@@ -1,12 +1,6 @@
 import java.io.InputStream;
-import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class App {
@@ -14,44 +8,36 @@ public class App {
         Scanner reader = new Scanner(System.in);
         Integer aux = 0;
 
-        // Fazer conexão HTTP (Protocolo usado para acessar a web) e buscar top 250 filmes
-        String url = "https://api.mocki.io/v2/549a5d8b";
-        URI endereco = URI.create(url); //Identificador do endereco
-        //var client = HttpClient.newHttpClient();
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder(endereco).GET().build(); //request - GET - build a request
-        HttpResponse<String> response = client.send(request, BodyHandlers.ofString()); // client faz uma requisicao e armazenamos em uma variavel de resposta
-        String body = response.body();
+        // Fazer conexão HTTP (Protocolo usado para acessar a web) e buscar conteudos
+        // String url = "https://api.mocki.io/v2/549a5d8b";
+        // ExtratorConteudo extrator = new ExtratorConteudoIMDB();
 
-        // Coletar apenas os dados: {titulo, postr, classificacao}
-        JsonParser parser = new JsonParser(); // Objeto
-        List<Map<String, String>> listaDeFilmes = parser.parse(body);  //Associa uma chave com um valor
+        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-06-12&end_date=2022-06-14";
+        ExtratorConteudo extrator = new ExtratorConteudoNasa();
+
+        var http = new ClienteHttp();
+        String json = http.buscaDados(url);
+
 
         // Exibir e manipular os dados da maneira que quisermos
+        List<Conteudo> conteudos = extrator.extraiConteudos(json);
+
         while (aux != 2) {
-            System.out.println("Bem vindo a YourTop10\n1 - Ver top filmes\n2 - Sair do programa\n");
-            aux = reader.nextInt();
+            System.out.print("Bem vindo a YourTop10\n1 - Ver top\n2 - Sair do programa\n");
+            aux = Integer.parseInt(reader.nextLine());
             switch (aux) {
                 case 1:
-                    for (Map<String,String> filme : listaDeFilmes) {
+                    for (int i = 0; i < 3; i++) {
+                        Conteudo conteudo = conteudos.get(i);
 
-                    /* Input do usuario para o enereco da imagem na qual ele quer fazer a figurinha
-                        Scanner reader = new Scanner(System.in);
-                        System.out.println("Digite o endereco da imagem: ");
-                        reader.close();
-                    */
-                        String enderecoImagem = filme.get("image");
-                        String titulo = filme.get("title");
-
-                        String nomeArquivo = "images/" + titulo + ".png";
-                        InputStream inputStream = new URL(enderecoImagem).openStream(); // Classe InputStream ler uma fonte de bytes (file, url, byteArray...)
-                        System.out.println("Titulo: \u001b[1m" + filme.get("title") + "\u001b[0m");
-                        System.out.println("Poster: \u001b[4m"+ filme.get("image") + "\u001b[0m");
-                        System.out.println("Nota: " + filme.get("imDbRating"));
+                        // Classe InputStream ler uma fonte de bytes (file, url, byteArray...)
+                        InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
+                        String nomeArquivo = "images/" + conteudo.getTitulo() + ".png";
 
                         var geradora = new GeradorDeStickers();
                         geradora.cria(inputStream, nomeArquivo);
 
+                        System.out.println(conteudo.getTitulo());
                         System.out.println();
                     }
                     break;
