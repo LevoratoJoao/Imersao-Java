@@ -12,7 +12,7 @@
 # Descrição o projeto
 Projeto desenvolvido durante a imersão Java - Alura.
 
-<!-- # Aula 01
+# Aula 01
 Durante a aula 01 foi contruido uma aplicação para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
 ## Desafios
   1. [ ] 1. Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
@@ -62,14 +62,14 @@ Nesta aula o código foi refatorado e estruturado em orientação a objtos para 
 2. [ ] 2. Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
 3. [ ] 3. Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra
 4. [ ] 4. Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
-5. [ ]5. **Desafio supremo:** consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. [Repositório com APIs públicas](https://github.com/public-apis/public-apis).
+5. [ ] 5. **Desafio supremo:** consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. [Repositório com APIs públicas](https://github.com/public-apis/public-apis).
 
 ## Links
 * Artigo na Alura “[Como não aprender Java e Orientação a Objetos: getters e setters](https://www.alura.com.br/artigos/nao-aprender-oo-getters-e-setters)”.
 * Artigo na Alura “[Como não aprender Java e Orientação a Objetos: herança](https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-heranca)”.
 * Podcast Hipsters.tech sobre [Práticas de Orientação a Objetos](https://www.alura.com.br/podcast/praticas-de-orientacao-a-objetos-hipsters-129-a453).
 * Podcast Hipsters.tech sobre [Design Patterns]().
-* Podcast Hipsters.tech sobre [SOLID](https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649). -->
+* Podcast Hipsters.tech sobre [SOLID](https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649).
 
 # Aula 04
 Na quarta aula construimos uma API REST para expor nosso próprio conteúdo, no caso este conteúdo será de linguagens de programação, utilizando ferramentas como o Spring Framework e um banco de dados NoSQL.
