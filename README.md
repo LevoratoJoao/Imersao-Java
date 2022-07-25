@@ -7,12 +7,13 @@
 * [Aula 02](https://github.com/LevoratoJoao/Imersao-Java/tree/aula02)
 * [Aula 03](https://github.com/LevoratoJoao/Imersao-Java/tree/aula03)
 * [Aula 04](https://github.com/LevoratoJoao/Imersao-Java/tree/aula04)
+* [Aula 05](https://github.com/LevoratoJoao/Imersao-Java/tree/aula05)
 * [Projeto finalizado](https://github.com/LevoratoJoao/Imersao-Java/tree/main)
 
 # Descrição o projeto
 Projeto desenvolvido durante a imersão Java - Alura.
 
-# Aula 01
+<!-- # Aula 01
 Durante a aula 01 foi contruido uma aplicação para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
 ## Desafios
   1. [ ] 1. Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
@@ -74,7 +75,7 @@ Nesta aula o código foi refatorado e estruturado em orientação a objtos para 
 # Aula 04
 Na quarta aula construimos uma API REST para expor nosso próprio conteúdo, no caso este conteúdo será de linguagens de programação, utilizando ferramentas como o Spring Framework e um banco de dados NoSQL.
 
-<!--Explicação - Spring Framework -->
+Explicação - Spring Framework
 
 Para acessar o banco de dados entre com uma conta no MongoDb e crie um novo projeto, após criar um novo projeto clique em "Connect" -> "Connect your application" para gerar um connection string. No projeto acesse:
 ```
@@ -84,7 +85,7 @@ e subistitua a conexão:
 ```
 spring.data.mongodb.uri = mongodb+srv://<usuario>:<senha>@cluster0.z5v5s.mongodb.net/<nomeDb>?retryWrites=true&w=majority
 ```
-<!--Explicação - Postman -->
+Explicação - Postman
 
 # Desafios
 1. [ ] 1. Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
@@ -106,5 +107,7 @@ spring.data.mongodb.uri = mongodb+srv://<usuario>:<senha>@cluster0.z5v5s.mongodb
 * Podcast [Hipsters.Tech sobre MongoDB](https://www.hipsters.tech/mongodb-hipsters-ponto-tech-305/).
 * Hipters.Tube [“O que é SQL e NoSQL?”](https://www.youtube.com/watch?v=aure5d3B88g).
 * Artigo da Alura [“Spring: Conheça esse framework Java”](https://www.alura.com.br/artigos/spring-conheca-esse-framework-java).
-* Alura+ [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs).
+* Alura+ [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs). -->
+
+# Aula 05
 
