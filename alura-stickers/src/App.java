@@ -15,7 +15,7 @@ public class App {
         // String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-06-12&end_date=2022-06-14";
         // ExtratorConteudo extrator = new ExtratorConteudoNasa();
 
-        String url = "http://localhost:8080/linguagens";
+        String url = "https://levorato-linguagens-api.herokuapp.com/linguagens";
         ExtratorConteudo extrator = new ExtratorConteudoIMDB();
 
         var http = new ClienteHttp();

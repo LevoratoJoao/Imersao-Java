@@ -1,5 +1,6 @@
 # Imersão Java
-[![status de desenvolvimento](https://img.shields.io/badge/STATUS-Em_desenvolvimento-ansicolortags.svg)](https://shields.io/)
+![status de desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 ## Índice
 
@@ -111,3 +112,46 @@ Explicação - Postman
 
 # Aula 05
 
+Na aula 05 tornamos a aplicação acessível por qualquer pessoa, fazendo o deploy na nuvem da plataforma Heroku. Além de gerar figurinhas a partir do conteúdo dessa nossa API.
+
+Para fazer um deploy no Heroku precisamos ter nosso projeto em um repositório Git e criar uma nova aplicação na plataforma e depois seguir os seguintes passos:
+
+Crie um arquivo dentro da pasta ```linguagens-api``` chamado ```system.properties``` e digite:
+```
+java.runtime.version=17
+```
+Depois digite os comanos no terminal:
+```
+$ heroku login
+$ heroku git:remote -a <nome-da-aplicacao>
+$ git push heroku main
+```
+Caso já tenha um repositório com seu projeto e sua API está presente neste repositório execute o seguinte comando para o push:
+```
+git subtree push --prefix linguagens-api heroku main
+```
+
+Também é possivel rodar a aplicação da seguinte forma mas é necessário ter o Java instalado em sua máquina:
+o framework Spring já nos traz um arquivo mvnw que nada mais é que um script e para executalo basta rodar o comando
+```
+./mvnw package
+```
+isso irá criar um arquivo que está dentro da pasta ```linguagens-api/target``` e terá o arquivo .jar ```linguagens-api-0.0.1-SNAPSHOT.jar```, execute o comando para rodar a aplicação
+```
+java -jar linguagens-api-0.0.1-SNAPSHOT.jar
+```
+
+
+## Desafios
+1. [x] 1. Compartilhe com seus amigos a sua URL do Heroku, para que eles possam consumir a sua API (com o padrão de atributos title e image) e gerar figurinhas do conteúdo que você utilizou (linguagens de programação, filmes, músicas);
+2. [ ] 2. Colocar a aplicação no cloud da Oracle;
+3. [ ] 3. Implementar algum mecanismo de votação na API, para que outros amigos votem nas linguagens preferidas para que se possa fazer um ranking;
+4. [ ] 4. **Desafio supremo**: Evoluir o projeto das três primeiras aula para que ele gere um bundle de stickers, para que se possa fazer o download e já incluir vários stickers no WhatsApp; Usar os conhecimentos aprendidos em alguma imersão React da Alura e fazer uma aplicação front-end para gerar esse bundle, onde possa se passar a URL do conteúdo e já visualizar os stickers;
+
+## Links
+* [Dev em T: especialista x generalista](https://www.alura.com.br/dev-em-t).
+* Site do [Heroku](https://dashboard.heroku.com/apps), que é um PaaS (plataforma como serviço).
+* Documentação sobre a [Oracle Cloud](https://docs.oracle.com/pt-br/iaas/Content/home.htm).
+* Artigo da Alura [“Heroku, Vercel e outras opções de Cloud como plataforma”](https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma).
+* Podcast Hipters.Tech [“Integração Contínua, Deploy Contínuo e Github Actions”](https://www.alura.com.br/podcast/hipsterstech-integracao-continua-deploy-continuo-e-github-actions-hipsters-213-a335).
+* Pesquisa da JetBrains, empresa que desenvolve a IDE IntelliJ, [sobre o ecossistema Java em 2021](https://www.jetbrains.com/lp/devecosystem-2021/java/).
