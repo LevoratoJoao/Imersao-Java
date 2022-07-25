@@ -12,8 +12,11 @@ public class App {
         // String url = "https://api.mocki.io/v2/549a5d8b";
         // ExtratorConteudo extrator = new ExtratorConteudoIMDB();
 
-        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-06-12&end_date=2022-06-14";
-        ExtratorConteudo extrator = new ExtratorConteudoNasa();
+        // String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-06-12&end_date=2022-06-14";
+        // ExtratorConteudo extrator = new ExtratorConteudoNasa();
+
+        String url = "http://localhost:8080/linguagens";
+        ExtratorConteudo extrator = new ExtratorConteudoIMDB();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
@@ -27,7 +30,7 @@ public class App {
             aux = Integer.parseInt(reader.nextLine());
             switch (aux) {
                 case 1:
-                    for (int i = 0; i < 3; i++) {
+                    for (int i = 0; i < 10; i++) {
                         Conteudo conteudo = conteudos.get(i);
 
                         // Classe InputStream ler uma fonte de bytes (file, url, byteArray...)

@@ -7,19 +7,12 @@
 * [Aula 02](https://github.com/LevoratoJoao/Imersao-Java/tree/aula02)
 * [Aula 03](https://github.com/LevoratoJoao/Imersao-Java/tree/aula03)
 * [Aula 04](https://github.com/LevoratoJoao/Imersao-Java/tree/aula04)
-* [Projeto finalizado](#Projeto-finalizado)
+* [Projeto finalizado](https://github.com/LevoratoJoao/Imersao-Java/tree/main)
 
 # Descrição o projeto
 Projeto desenvolvido durante a imersão Java - Alura.
 
-## APIs usadas
-* (https://api.mocki.io/v2/549a5d8b/Top250Movies)
-* (https://api.mocki.io/v2/549a5d8b/MostPopularMovies)
-* (https://api.mocki.io/v2/549a5d8b/MostPopularTVs)
-* (https://api.mocki.io/v2/549a5d8b/Top250TVs)
-* (https://api.mocki.io/v2/549a5d8b/NASA-APOD)
-
-# Aula 01
+<!-- # Aula 01
 Durante a aula 01 foi contruido uma aplicação para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
 ## Desafios
   1. [ ] 1. Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
@@ -59,7 +52,7 @@ Na segunda aula foi criado um gerador de figurinhas explorando outras biblioteca
 * Documentação da classe [Graphics2D](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Graphics2D.html), a “caneta” que permite escrever, desenhar e imprimir outras imagens em uma imagem original.
 * Documentação da [abstração InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html), que representa um fluxo de leitura de dados de qualquer fonte, como arquivos, URLs, entre outros.
 * [Java Polimorfismo: entenda herança e interfaces](https://www.alura.com.br/conteudo/java-heranca-interfaces-polimorfismo).
-* Apêndice da apostila [Java e Orientação a Objetos](https://www.alura.com.br/apostila-java-orientacao-objetos/apendice-pacote-java-io) da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream. -->
+* Apêndice da apostila [Java e Orientação a Objetos](https://www.alura.com.br/apostila-java-orientacao-objetos/apendice-pacote-java-io) da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream.
 
 # Aula 03
 Nesta aula o código foi refatorado e estruturado em orientação a objtos para assim facilitar o entendimento e de uma maneira que facilitasse o consumo e uma API diferente
@@ -76,9 +69,42 @@ Nesta aula o código foi refatorado e estruturado em orientação a objtos para 
 * Artigo na Alura “[Como não aprender Java e Orientação a Objetos: herança](https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-heranca)”.
 * Podcast Hipsters.tech sobre [Práticas de Orientação a Objetos](https://www.alura.com.br/podcast/praticas-de-orientacao-a-objetos-hipsters-129-a453).
 * Podcast Hipsters.tech sobre [Design Patterns]().
-* Podcast Hipsters.tech sobre [SOLID](https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649).
+* Podcast Hipsters.tech sobre [SOLID](https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649). -->
 
 # Aula 04
+Na quarta aula construimos uma API REST para expor nosso próprio conteúdo, no caso este conteúdo será de linguagens de programação, utilizando ferramentas como o Spring Framework e um banco de dados NoSQL.
 
-# Projeto finalizado
+<!--Explicação - Spring Framework -->
+
+Para acessar o banco de dados entre com uma conta no MongoDb e crie um novo projeto, após criar um novo projeto clique em "Connect" -> "Connect your application" para gerar um connection string. No projeto acesse:
+```
+Imersao-Java\linguagens-api\src\main\resources\application.properties
+```
+e subistitua a conexão:
+```
+spring.data.mongodb.uri = mongodb+srv://<usuario>:<senha>@cluster0.z5v5s.mongodb.net/<nomeDb>?retryWrites=true&w=majority
+```
+<!--Explicação - Postman -->
+
+# Desafios
+1. [ ] 1. Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
+2. [ ] 2. Devolver a listagem ordenada pelo ranking;
+3. [ ] 3. Criar na sua API um modelo de entidade com nomes diferentes de title e image e criar seu próprio extrator de informações personalizado OU, manter com o nome title e image e traduzir para que seja retornado como título e imagem através do uso de DTO (Data Transfer Object);
+4. [ ] 4. Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
+5. [ ] 5. **Desafio supremo**: Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
+
+# Links
+* [Documentação do Spring Framework](https://spring.io).
+* [Iniciar um projeto utilizando Spring](https://start.spring.io).
+* [download do Maven](https://maven.apache.org/download.cgi).
+* [download do Postman](https://www.postman.com).
+* Página para fazer o [registro e começar a utilizar o MongoDb Atlas](https://www.mongodb.com/cloud/atlas/register).
+* GitHub com os [logos das linguagens de programação](https://github.com/abrahamcalf/programming-languages-logos).
+* Primeira aula do curso [“Maven: gerenciamento de dependências e build de aplicações Java”](https://www.alura.com.br/conteudo/maven-gerenciamento-dependencias-build-aplicacoes-java) da Alura.
+* Alura+ [“O que é REST?”](https://www.youtube.com/watch?v=weQ8ssA6iBU).
+* Artigo da Alura [“Conceito e fundamentos sobre REST”](https://www.alura.com.br/artigos/rest-conceito-e-fundamentos).
+* Podcast [Hipsters.Tech sobre MongoDB](https://www.hipsters.tech/mongodb-hipsters-ponto-tech-305/).
+* Hipters.Tube [“O que é SQL e NoSQL?”](https://www.youtube.com/watch?v=aure5d3B88g).
+* Artigo da Alura [“Spring: Conheça esse framework Java”](https://www.alura.com.br/artigos/spring-conheca-esse-framework-java).
+* Alura+ [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs).
 
