@@ -1,14 +1,16 @@
 # Imersão Java
-[![status de desenvolvimento](https://img.shields.io/badge/STATUS-Em_desenvolvimento-ansicolortags.svg)](https://shields.io/)
+![status de desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 
 ## Índice
 
-* [Descrição o projeto](#Descrição-o-projeto)
-* [Aula 01](#Aula01)
-* [Aula 02](#Aula-02)
-* [Aula 03](#Aula-03)
-* [Aula 04](#Aula-04)
-* [Projeto finalizado](#Projeto-finalizado)
+* [Aula 01](https://github.com/LevoratoJoao/Imersao-Java/tree/aula01)
+* [Aula 02](https://github.com/LevoratoJoao/Imersao-Java/tree/aula02)
+* [Aula 03](https://github.com/LevoratoJoao/Imersao-Java/tree/aula03)
+* [Aula 04](https://github.com/LevoratoJoao/Imersao-Java/tree/aula04)
+* [Aula 05](https://github.com/LevoratoJoao/Imersao-Java/tree/aula05)
+* [Projeto finalizado](https://github.com/LevoratoJoao/Imersao-Java/tree/main)
 
 # Descrição o projeto
 Projeto desenvolvido durante a imersão Java - Alura.
@@ -58,6 +60,3 @@ Na segunda aula foi criado um gerador de figurinhas explorando outras biblioteca
 * Documentação da [abstração InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html), que representa um fluxo de leitura de dados de qualquer fonte, como arquivos, URLs, entre outros.
 * [Java Polimorfismo: entenda herança e interfaces](https://www.alura.com.br/conteudo/java-heranca-interfaces-polimorfismo).
 * Apêndice da apostila [Java e Orientação a Objetos](https://www.alura.com.br/apostila-java-orientacao-objetos/apendice-pacote-java-io) da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream.
-
-# Projeto finalizado
-
