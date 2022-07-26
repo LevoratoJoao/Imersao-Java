@@ -1,6 +1,7 @@
 # Imersão Java
 ![status de desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 
 ## Índice
 
@@ -14,7 +15,32 @@
 # Descrição o projeto
 Projeto desenvolvido durante a imersão Java - Alura.
 
-<!-- # Aula 01
+**alura-stickers:** aplicação criada para consumir os dados de uma API de imagens e gerar figurinhas. Os dados são extraidos atráves do json das APIs, apartir disso é realizado a leitura das imagens e realizamos as devidas edições nela assim como na frase escrita (tamanho, fonte, transparencia, etc...).
+
+**linguagens-api**: [levorato-linguagens-api.herokuapp.com/linguagens](https://levorato-linguagens-api.herokuapp.com/linguagens)
+
+A API irá retornar o que esta armazenados no banco de dados em formato de um arquivo json como mostrado no exemplo abaixo:
+
+![HTTP-GET na API](https://user-images.githubusercontent.com/90461798/180868972-c840ffcc-7039-40e7-840c-5e080cef6595.png)
+
+Atráves do Postman podemos utilizar metodo GET e POST para visualizar os dados na API e adicionar
+
+![Metodo GET no Postman](https://user-images.githubusercontent.com/90461798/180898360-48083a02-b4e3-4dbd-85c5-3341edbd778e.png)
+
+![Metodo POST no Postman](https://user-images.githubusercontent.com/90461798/180898808-656d0cab-fca1-4b15-b2e0-56ebad704135.png)
+
+Para o banco de dados utilizamos o [MongoDB](https://cloud.mongodb.com/v2/62ddbad51e63e5442419d496#clusters) que é um cluster de servidores que tem banco de dados. Nele podemos adicionar, deletar e alterar itens na nossa base de dados.
+A conexão está presente na [linguagens-api](https://github.com/LevoratoJoao/Imersao-Java/blob/main/linguagens-api/src/main/resources/application.properties) basta substituir os campos das ```<>``` pela suas informações de conexão do MongoDB.
+
+| Vitrine.dev |                                                          |
+| ----------- | -------------------------------------------------------- |
+| Nome        | Imaersão Java                                            |
+| Tecnologias | Java, MongoDB, Heroku, Spring                            |
+| URL         | https://levorato-linguagens-api.herokuapp.com/linguagens |
+| Desafio     | https://www.alura.com.br/imersao-java                    |
+
+
+# Aula 01
 Durante a aula 01 foi contruido uma aplicação para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
 ## Desafios
   1. [ ] 1. Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
@@ -76,9 +102,11 @@ Nesta aula o código foi refatorado e estruturado em orientação a objtos para 
 # Aula 04
 Na quarta aula construimos uma API REST para expor nosso próprio conteúdo, no caso este conteúdo será de linguagens de programação, utilizando ferramentas como o Spring Framework e um banco de dados NoSQL.
 
-Explicação - Spring Framework
+<!-- Explicação - Spring Framework -->
 
-Para acessar o banco de dados entre com uma conta no MongoDb e crie um novo projeto, após criar um novo projeto clique em "Connect" -> "Connect your application" para gerar um connection string. No projeto acesse:
+Para acessar o banco de dados entre com uma conta no MongoDb e crie um novo projeto, após criar um novo projeto clique em ```"Connect" -> "Connect your application"``` para gerar um connection string.
+
+No projeto acesse:
 ```
 Imersao-Java\linguagens-api\src\main\resources\application.properties
 ```
@@ -86,7 +114,7 @@ e subistitua a conexão:
 ```
 spring.data.mongodb.uri = mongodb+srv://<usuario>:<senha>@cluster0.z5v5s.mongodb.net/<nomeDb>?retryWrites=true&w=majority
 ```
-Explicação - Postman
+<!-- Explicação - Postman -->
 
 # Desafios
 1. [ ] 1. Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
@@ -108,7 +136,7 @@ Explicação - Postman
 * Podcast [Hipsters.Tech sobre MongoDB](https://www.hipsters.tech/mongodb-hipsters-ponto-tech-305/).
 * Hipters.Tube [“O que é SQL e NoSQL?”](https://www.youtube.com/watch?v=aure5d3B88g).
 * Artigo da Alura [“Spring: Conheça esse framework Java”](https://www.alura.com.br/artigos/spring-conheca-esse-framework-java).
-* Alura+ [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs). -->
+* Alura+ [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs).
 
 # Aula 05
 
