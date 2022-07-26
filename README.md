@@ -116,14 +116,14 @@ spring.data.mongodb.uri = mongodb+srv://<usuario>:<senha>@cluster0.z5v5s.mongodb
 ```
 <!-- Explicação - Postman -->
 
-# Desafios
+## Desafios
 1. [ ] 1. Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
 2. [ ] 2. Devolver a listagem ordenada pelo ranking;
 3. [ ] 3. Criar na sua API um modelo de entidade com nomes diferentes de title e image e criar seu próprio extrator de informações personalizado OU, manter com o nome title e image e traduzir para que seja retornado como título e imagem através do uso de DTO (Data Transfer Object);
 4. [ ] 4. Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
 5. [ ] 5. **Desafio supremo**: Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
 
-# Links
+## Links
 * [Documentação do Spring Framework](https://spring.io).
 * [Iniciar um projeto utilizando Spring](https://start.spring.io).
 * [download do Maven](https://maven.apache.org/download.cgi).
