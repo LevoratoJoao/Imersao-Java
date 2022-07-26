@@ -1,13 +1,15 @@
 # Imersão Java
-[![status de desenvolvimento](https://img.shields.io/badge/STATUS-Em_desenvolvimento-ansicolortags.svg)](https://shields.io/)
+![status de desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 
 ## Índice
 
-* [Descrição o projeto](#Descrição-o-projeto)
 * [Aula 01](https://github.com/LevoratoJoao/Imersao-Java/tree/aula01)
 * [Aula 02](https://github.com/LevoratoJoao/Imersao-Java/tree/aula02)
 * [Aula 03](https://github.com/LevoratoJoao/Imersao-Java/tree/aula03)
-* [Aula 04](#Aula-04)
+* [Aula 04](https://github.com/LevoratoJoao/Imersao-Java/tree/aula04)
+* [Aula 05](https://github.com/LevoratoJoao/Imersao-Java/tree/aula05)
 * [Projeto finalizado](https://github.com/LevoratoJoao/Imersao-Java/tree/main)
 
 # Descrição o projeto
